@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Sin Chart</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	
+	<head>
+		<meta charset="utf-8">
+		<title>Sin Chart</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
 
-	<!-- Готовим контейнер для диаграммы -->
-<div id="content" align="center">
- <canvas id="myChart" width="628" height="400"></canvas>
-<div>
-	<p>y = <input id="par_A" type="text" name="a" value="1"> * sin &#40;<input id="par_B" type="text" name="b" value="1">	* x + <input id="par_C" type="text" name="c" value="1">&#41;</p>
-</div>
+	<body>	
+		<div id="content" align="center">
+ 			<canvas id="myChart" width="628" height="400"></canvas>
+			<div>
+				<p>y = <input id="sin_A" type="text" name="a" value="1"> * sin &#40;<input id="sin_B" type="text" name="b" value="1">	* x + <input id="sin_C" type="text" name="c" value="1">&#41;</p>
+				<p>y = <input id="cos_A" type="text" name="a" value="1"> * cos &#40;<input id="cos_B" type="text" name="b" value="1">	* x + <input id="cos_C" type="text" name="c" value="1">&#41;</p>
+			</div>
+			<div class="start">
+				<button class="button" onclick="drawChart()">
+					намалювати графіки функцій
+				</button>							
+			</div>
+		</div>
 
-<div class="start">
-	<button class="button" onclick="drawChart()">
-		намалювати графік функції
-	</button>
-							
-	</div>
-
-</div>
-
-	<script type="text/javascript" 
- src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" 
- src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-</body>
+		<script type="text/javascript" 
+		 src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" 
+ 		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
 </html>
